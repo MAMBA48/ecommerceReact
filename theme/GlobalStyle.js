@@ -4,7 +4,7 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     :root {
         //variaveis
-        --bgColor: purple;
+        --bgColor: #5950A1;
     }
     * {
         margin: 0;
@@ -15,9 +15,12 @@ export const GlobalStyle = createGlobalStyle`
     body {
         display: flex;
         justify-content: center;
-        background: silver;
+        background: #1a1033;
         height: 100%;
         width: 100%;
+    }
+    h1, h2, h3, h4, h5 {
+        margin-left: 20px;
     }
 
 `
