@@ -1,0 +1,40 @@
+
+//contendo os produtos e suas propriedades
+export const products = [
+    {
+        "id": 1,
+        "title": "BattleField",
+        "price": 99.99,
+        "image": "URL inserir"
+    },
+    {
+        "id": 2,
+        "title": "Call of Duty",
+        "price": 329.99,
+        "image": "URL inserir"
+    },
+    {
+        "id": 3,
+        "title": "Dark Souls",
+        "price": 147.99,
+        "image": "URL inserir"
+    },
+    {
+        "id": 4,
+        "title": "Resident Evil 3",
+        "price": 149.99,
+        "image": "URL inserir"
+    },
+    {
+        "id": 5,
+        "title": "God of War - Ragnarok",
+        "price": 349.99,
+        "image": "URL inserir"
+    },
+    {
+        "id": 6,
+        "title": "Horizon Forbidden West",
+        "price": 199.59,
+        "image": "URL inserir"
+    },
+]
