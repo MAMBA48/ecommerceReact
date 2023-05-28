@@ -21,7 +21,7 @@ export const Header = () => {
     return (
         <Container>
                 <div>
-                    <Logo>Arnia</Logo>
+                    <Logo><img src="./src/assets/arnia.png" alt="" /></Logo>
                     <small>Loja virtual</small>
                 </div>
                 <div>

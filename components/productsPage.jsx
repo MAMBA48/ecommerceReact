@@ -42,7 +42,22 @@ const BtnAct= styled.button`
 `
 const SpanHeader = styled.span`
     display: flex;
+    position: relative;
     justify-content: space-between;
+`
+const Cart = styled.div`
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    border-radius: 9px;
+    color: #fff;
+    font-size: 1.5rem;
+    background: var(--bgColor);
+    cursor: pointer;
 `
 
 //formName = formName.replace(/[^A-Za-z0-9]/g, '_').toLowerCase(); REGEX
@@ -56,7 +71,7 @@ const Products = ({ changeScreen }) => {
     <div>
         <SpanHeader>
             <h1>Produtos</h1>
-            <div></div>
+            <Cart><p>0</p></Cart>
         </SpanHeader>
         <Container>
                 { 
