@@ -19,8 +19,19 @@ export const GlobalStyle = createGlobalStyle`
         height: 100%;
         width: 100%;
     }
+    ul {
+        list-style: none;
+    }
     h1, h2, h3, h4, h5 {
         margin-left: 20px;
+    }
+    button.allStyles {
+        padding: 10px;
+        border: none;
+        background-color: #5950A1;
+        font-size: 1rem;
+        color: #fff;
+        border-radius: 9px;
     }
 
 `
