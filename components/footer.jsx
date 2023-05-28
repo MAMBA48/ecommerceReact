@@ -13,11 +13,12 @@ const Container = styled.footer`
 
  //função para as outras divs restantes atribuir estilização   
     >div {
+        display: flex;
+        align-items: center;
         text-align: center;
         line-height: 60px;
         height: 60px;
         width: 120px;
-        background: #5950A1;
         color: #fff;
     }
 `
@@ -26,10 +27,11 @@ export const Footer = () => {
 
     return (
         <Container>
-            <div>VISA</div>
-            <div>MASTER</div>
-            <div>BOLETO</div>
-            <div>HIPERCARD</div>
+
+            <div><img src="./src/assets/v.png" alt="card flag" /></div>
+            <div><img src="./src/assets/m.png" alt="card flag" /></div>
+            <div><img src="./src/assets/b.png" alt="card flag" /></div>
+            <div><img src="./src/assets/h.png" alt="card flag" /></div>
         </Container>
     )
 }

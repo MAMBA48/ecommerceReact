@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 import { Header } from "./header"
 import { Footer } from './footer'
-import Products from './pages/products'
+import Products from './pages/productsPage'
 import Ecommerce from './pages/ecommerce'
 import Checkout from './pages/checkout'
 import { useState } from 'react'
-import { products as p } from './pages/utils/products'
+import { products as p} from './pages/utils/products'
 
 //estilizando a tag main
 const Container = styled.main`
@@ -23,7 +23,6 @@ export const SCREENS = {
     ECOMMERCE: 1,
     CHECKOUT: 2
 }
-
 export const Layout = ({ children }) => {
 //estado inicial seleciona o estado da tela de produtos 
     const [screen, setScreen] = useState(SCREENS.PRODUCTS)
@@ -33,7 +32,7 @@ export const Layout = ({ children }) => {
     <Container>
         <Header />
         { children }
-            <pre>{JSON.stringify(products, null, 2)}</pre>
+            {/*<pre>{JSON.stringify(products, null, 2)}</pre>*/}
             {screen === SCREENS.PRODUCTS && <Products changeScreen={setScreen} />}
             {screen === SCREENS.ECOMMERCE && <Ecommerce changeScreen={setScreen} />}
             {screen === SCREENS.CHECKOUT && <Checkout changeScreen={setScreen} />}
